@@ -1,0 +1,14 @@
+.app-footer {
+  display: inline-block;
+  width: 100%;
+  height: $footer-h;
+  line-height: $footer-h;
+  text-align: center;
+  background-color: #151D27;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+
+  span {
+    font: normal .7em Helvetica;
+    color: #4A90E2;
+  }
+}

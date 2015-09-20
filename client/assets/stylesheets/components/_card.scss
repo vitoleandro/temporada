@@ -1,0 +1,80 @@
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+  .card {
+    float: left;
+    width: 48%;
+    min-height: 250px;
+    padding: 0;
+    margin: 0 1% 16px 1%;
+    color: white;
+    background: #151D27;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+
+    &.card-destak {
+      width: 100%;
+      margin: 0 0 16px 0;
+
+      .card-image { float: left; width: 60%; }
+
+      .card-content { display: inline-block; width: 40%; }
+    }
+
+    .card-image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      display: inline-block;
+      width: 100%;
+    }
+    .card-title {
+      display: block;
+      margin: 16px;
+      font: normal .8em Helvetica;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .card-metadata {
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+
+      .card-notation {
+        float: left;
+        margin: 3px 0 0 16px;
+        font: normal .65em Helvetica;
+      }
+
+      .card-notation--icon {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 2px 0 0 5px;
+        background: url(../images/star2.png) no-repeat center center;
+      }
+
+      .card-session {
+        float: left;
+        margin: 3px 0 0 10px;
+        font: normal .65em Helvetica;
+      }
+    }
+
+    .card-desc {
+      padding: 16px;
+      font: normal .6em Helvetica;
+      line-height: 1.5em;
+    }
+
+    .card-button { float: right; margin: 0 16px 16px 0; }
+  }
+
+}

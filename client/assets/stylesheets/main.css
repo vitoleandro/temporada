@@ -1,0 +1,330 @@
+/*==============================================*
+ * Arquivo principal, reune todos os imports.
+ *=============================================*/
+/* Base */
+/*====================================================*
+ *
+ *===================================================*/
+/**
+ * Reset settings
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%; }
+
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+html,
+body {
+  background: #212B37;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #212B37 0%, #101A25 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #212B37), color-stop(100%, #101A25));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #212B37 0%, #101A25 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #212B37 0%, #101A25 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #212B37 0%, #101A25 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #212B37 0%, #101A25 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#101A25',GradientType=0 ); }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  .container {
+    width: 90%;
+    margin: 0 5%; }
+  .card {
+    float: left;
+    width: 100%;
+    min-height: 250px;
+    margin: 16px 0.5% 16px 1.5%;
+    padding: 0;
+    color: white;
+    background: #151D27;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+    .card.card-destak {
+      float: left;
+      width: 100%; }
+      .card.card-destak .card-image {
+        display: block; }
+      .card.card-destak .card-content {
+        display: inline-block;
+        width: 100%; }
+    .card .card-image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+    .card .card-content {
+      display: inline-block;
+      width: 100%; }
+    .card .card-title {
+      display: block;
+      margin: 16px;
+      font: normal 0.8em Helvetica;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .card .card-metadata {
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px; }
+      .card .card-metadata .card-notation {
+        float: left;
+        margin: 3px 0 0 16px;
+        font: normal 0.65em Helvetica; }
+      .card .card-metadata .card-notation--icon {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 2px 0 0 5px;
+        background: url(../images/star2.png) no-repeat center center; }
+      .card .card-metadata .card-session {
+        float: left;
+        margin: 3px 0 0 10px;
+        font: normal 0.65em Helvetica; }
+    .card .card-desc {
+      padding: 16px;
+      font: normal 0.6em Helvetica;
+      line-height: 1.5em; }
+    .card .card-button {
+      float: right;
+      margin: 0 16px 16px 0; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    width: 700px;
+    margin: 0 auto; }
+  .card {
+    float: left;
+    width: 48%;
+    min-height: 250px;
+    margin: 16px 0.5% 16px 1.5%;
+    padding: 0;
+    color: white;
+    background: #151D27;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+    .card.card-destak {
+      width: 100%; }
+      .card.card-destak .card-image {
+        float: left;
+        width: 60%; }
+      .card.card-destak .card-content {
+        display: inline-block;
+        width: 40%; }
+    .card .card-image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+    .card .card-content {
+      display: inline-block;
+      width: 100%; }
+    .card .card-title {
+      display: block;
+      margin: 16px;
+      font: normal 0.8em Helvetica;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .card .card-metadata {
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px; }
+      .card .card-metadata .card-notation {
+        float: left;
+        margin: 3px 0 0 16px;
+        font: normal 0.65em Helvetica; }
+      .card .card-metadata .card-notation--icon {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 2px 0 0 5px;
+        background: url(../images/star2.png) no-repeat center center; }
+      .card .card-metadata .card-session {
+        float: left;
+        margin: 3px 0 0 10px;
+        font: normal 0.65em Helvetica; }
+    .card .card-desc {
+      padding: 16px;
+      font: normal 0.6em Helvetica;
+      line-height: 1.5em; }
+    .card .card-button {
+      float: right;
+      margin: 0 16px 16px 0; } }
+
+/**
+ * App Header file settings
+ */
+.app-header {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #151D27;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); }
+  .app-header .app-header--logo {
+    float: left;
+    width: 37px;
+    height: 31px;
+    margin: 14px 16px 0 0;
+    background: url(../images/logo.png) no-repeat center center; }
+  .app-header .app-header--title {
+    display: inline-block;
+    margin: 5px 0 0 0;
+    font: normal 1em Helvetica;
+    color: white; }
+
+.app-body {
+  display: inline-block;
+  width: 100%;
+  height: calc(100% - ($header-h + $footer-h));
+  height: -webkit-calc(100% - 110px);
+  height: -moz-calc(100% - 110px);
+  overflow: auto; }
+
+.app-footer {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #151D27;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5); }
+  .app-footer span {
+    font: normal 0.7em Helvetica;
+    color: #4A90E2; }
+
+.icon {
+  display: inline-block; }
+
+.icon-comment {
+  width: 19px;
+  height: 16px;
+  background: url(../images/comments.png) no-repeat center center; }
+
+.icon-star {
+  width: 18px;
+  height: 16px;
+  background: url(../images/star-btn.png) no-repeat center center; }
+
+.icon-like {
+  width: 18px;
+  height: 17px;
+  background: url(../images/like.png) no-repeat center center; }
+
+.button {
+  color: white;
+  text-decoration: none;
+  font: normal 0.9em Helvetica;
+  background: #4A90E2;
+  border-radius: 4px; }
+  .button.button-more {
+    padding: 0.5em 0.6em; }
+
+.button-list {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.2); }
+  .button-list .button-list--item {
+    float: left;
+    width: calc(100% / 3);
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: hover 0.6s ease-out;
+    -webkit-transition: hover 0.6s ease-out;
+    -moz-transition: hover 0.6s ease-out; }
+    .button-list .button-list--item:hover {
+      background: #4A90E2; }
+    .button-list .button-list--item .button-list--item__icon {
+      margin: 7px auto; }
+    .button-list .button-list--item .button-list--item__desc {
+      display: block;
+      margin: -6px 0 0 0;
+      font: normal 0.7em Helvetica; }
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .card {
+    float: left;
+    width: 48%;
+    min-height: 250px;
+    padding: 0;
+    margin: 0 1% 16px 1%;
+    color: white;
+    background: #151D27;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+    .card.card-destak {
+      width: 100%;
+      margin: 0 0 16px 0; }
+      .card.card-destak .card-image {
+        float: left;
+        width: 60%; }
+      .card.card-destak .card-content {
+        display: inline-block;
+        width: 40%; }
+    .card .card-image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+    .card .card-content {
+      display: inline-block;
+      width: 100%; }
+    .card .card-title {
+      display: block;
+      margin: 16px;
+      font: normal 0.8em Helvetica;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .card .card-metadata {
+      display: block;
+      width: 100%;
+      height: 20px;
+      line-height: 20px; }
+      .card .card-metadata .card-notation {
+        float: left;
+        margin: 3px 0 0 16px;
+        font: normal 0.65em Helvetica; }
+      .card .card-metadata .card-notation--icon {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 2px 0 0 5px;
+        background: url(../images/star2.png) no-repeat center center; }
+      .card .card-metadata .card-session {
+        float: left;
+        margin: 3px 0 0 10px;
+        font: normal 0.65em Helvetica; }
+    .card .card-desc {
+      padding: 16px;
+      font: normal 0.6em Helvetica;
+      line-height: 1.5em; }
+    .card .card-button {
+      float: right;
+      margin: 0 16px 16px 0; } }

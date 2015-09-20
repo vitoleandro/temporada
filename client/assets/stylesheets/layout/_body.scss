@@ -1,0 +1,8 @@
+.app-body {
+  display: inline-block;
+  width: 100%;
+  height: calc(100% - ($header-h + $footer-h));
+  height: -webkit-calc(100% - 110px);
+  height: -moz-calc(100% - 110px);
+  overflow: auto;
+}

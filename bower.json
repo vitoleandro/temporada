@@ -1,0 +1,22 @@
+{
+  "name": "temporada",
+  "version": "1.0.0",
+  "description": "Review de series. Desafio HELabs",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "Leandro Vitor"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6"
+  }
+}
