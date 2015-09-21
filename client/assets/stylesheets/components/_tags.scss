@@ -1,0 +1,12 @@
+.tag {
+  display: inline-block;
+  margin: 0 0 10px 18px;
+  padding: .3em .5em;
+  border-radius: 3px;
+
+  &.tag-default {
+    color: white;
+    font: normal .7em $label-typography;
+    background: $blue-2;
+  }
+}

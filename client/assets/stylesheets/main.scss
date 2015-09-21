@@ -6,13 +6,15 @@
 @import 'base/reset';
 
 @import 'core/base';
-@import 'core/smartphone';
-@import 'core/tablet';
 
 @import 'layout/header';
+@import 'layout/banner';
 @import 'layout/body';
+@import 'layout/aside';
 @import 'layout/footer';
 
 @import 'components/icons';
 @import 'components/buttons';
+@import 'components/labels';
+@import 'components/tags';
 @import 'components/card';

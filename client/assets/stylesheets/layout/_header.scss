@@ -4,23 +4,24 @@
 
 .app-header {
   display: inline-block;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: $header-h;
-  line-height: $header-h;
-  background: #151D27;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  height: 40px;
+  background: $blue-4;
+  border-bottom: 2px solid $blue-5;
 
   .app-header--logo {
     float: left;
-    width: 37px;
-    height: 31px;
+    width: 18px;
+    height: 15px;
     margin: 14px 16px 0 0;
     background: url(../images/logo.png) no-repeat center center;
   }
 
   .app-header--title {
     display: inline-block;
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
     font: normal 1em Helvetica;
     color: white;
   }

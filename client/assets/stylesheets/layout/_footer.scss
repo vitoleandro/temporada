@@ -1,11 +1,12 @@
 .app-footer {
   display: inline-block;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: $footer-h;
-  line-height: $footer-h;
+  height: 40px;
   text-align: center;
-  background-color: #151D27;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+  background-color: $blue-4;
+  border-top: 2px solid $blue-5;
 
   span {
     font: normal .7em Helvetica;

@@ -21,7 +21,7 @@
     width: calc(100% / 3);
     width: -webkit-calc(100% / 3);
     width: -moz-calc(100% / 3);
-    height: 50px;
+    height: 30px;
     text-align: center;
     cursor: pointer;
     transition: hover .6s ease-out;
@@ -30,11 +30,14 @@
 
     &:hover {  background: #4A90E2; }
 
-    .button-list--item__icon { margin: 7px auto; }
+    .button-list--item__icon {
+      float: left;
+      margin: 10px 2px 0 10px;
+    }
 
     .button-list--item__desc {
-      display: block;
-      margin: -6px 0 0 0;
+      display: inline-block;
+      margin: 10px 0 0 0;
       font: normal .7em Helvetica;
     }
   }
