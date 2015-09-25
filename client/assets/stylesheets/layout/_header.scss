@@ -13,16 +13,10 @@
 
   .app-header--logo {
     float: left;
-    width: 18px;
-    height: 15px;
-    margin: 14px 16px 0 0;
-    background: url(../images/logo.png) no-repeat center center;
+    width: 200px;
+    height: 32px;
+    margin: 4px 16px 0 0;
+    background: url(../images/logo-main.svg) no-repeat center center;
   }
 
-  .app-header--title {
-    display: inline-block;
-    margin: 15px 0 0 0;
-    font: normal 1em Helvetica;
-    color: white;
-  }
 }
